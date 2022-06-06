@@ -1,0 +1,169 @@
+
+//VARIABLES
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  body {
+    background-image: url(/images/21.jpg);
+    background-color: #0a0909;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+
+  }
+
+#iconos i {
+    font-size: 26px;
+    padding: 0 8px;
+    color: #0a0909;
+    }
+
+
+    .productos-fila img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 450px;
+    width: 100%;
+  }
+
+             /*     <-----------------griddddd------>   */
+
+  main{
+      height: auto;
+          }
+        
+
+          main .filas-cd .card{
+            width: 75%;
+            text-align: center;
+          }
+          
+          main .fila-cd .card .card-img-top {
+            height: 300px;
+            width: 250px;
+            border: 5px solid white;
+          }
+
+
+  .galery-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    font-size: 30px;
+    
+
+  }
+
+footer {
+  background-color: white;
+  position: relative;
+}
+
+footer p{
+    color:#0a0909;
+    text-align:center;
+    
+}
+
+.iconos svg{
+  height: 25px;
+  width: 50px;
+  color:#0a0909;
+  padding: 0 8px;
+
+}
+
+.iconos ul {
+text-align: center;
+}
+
+.iconos  i {
+    padding: 0 8px;
+
+}
+
+
+.titulo{
+  width: 100%;
+  align-content: center;
+  height: 100px;
+}
+.titulo h1{
+  text-align: center;
+  font-size: 50px;
+  padding: 10px 30px 10px 30px;
+  font-family: Helvetica;
+  
+}
+.gallery{
+  margin: 10px 50px;
+  padding-left: 5%;
+}
+.gallery img{
+  transition: 1s;
+  padding: 15px;
+  width: 22%;
+  height: 200px;
+  filter: grayscale(100%);
+}
+.gallery img:hover{
+  transform: rotateY(180deg);
+  filter: grayscale(0%);
+}
+
+
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.grid-item:hover {
+  filter: opacity(0.9);
+  transform: scale(1.04);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+}
+
+
+@media (min-width: 600px) {
+  .wide {
+    grid-column: span 2;
+  }
+
+  .tall {
+    grid-row: span 2;
+  }
+
+}
+
+
+
+
+  /*# sourceMappingURL=style.css.map */
+
